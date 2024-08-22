@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	
+	<bean id="de" class="in.ait.beans.DieselEng" />
+	
+	<bean id="pe" class="in.ait.beans.PetrolEng" />
+	
+	<bean id="carDiesel" class="in.ait.beans.Car" >
+	   <property name="eng" ref ="de"/> 
+	 
+	</bean>
+	<bean id="carPetrol" class="in.ait.beans.Car" >
+	   <property name="eng" ref ="pe"/> 
+	 
+	</bean>
+	
+</beans>
