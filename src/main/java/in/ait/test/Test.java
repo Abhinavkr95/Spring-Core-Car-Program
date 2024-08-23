@@ -18,9 +18,11 @@ public class Test {
 		//Calling bean
 		Car carDiesel = (Car) context.getBean("carDiesel");
 		Car carPetrol = (Car) context.getBean("carPetrol");
+		Car carEv = (Car) context.getBean("carEv");
 
 		carDiesel.drive();
 		carPetrol.drive();
+		carEv.drive();
 	}
 
 }
